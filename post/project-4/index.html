@@ -198,7 +198,7 @@
 All the concepts and their associated relations, attributes, and instances from the knowledge conceptualization step are codified into a formal language in the knowledge formalization step. OWL, the standard language for ontology construction, is used to formalize the knowledge. This is supported by Protégé 5.5.0, an open-source software for building intelligent systems, based on OWL language
 SWRL is embedded to enable expressivity (i.e., rules and logic) in OWL.</p>
 <p><figure>
-    <img src="/images/semantic1.png"/> 
+    <img src="/My_Portfolio/images/semantic1.png"/> 
 </figure>
 .</p>
 <p>II. PROJECT AIMS</p>
@@ -211,7 +211,7 @@ of individuals to use with the defined logic rules (expecting majority of the re
 <p>III. METHODOLOGY
 The Data is collected from google using several online websites and may not be an correspond to a car’s true specification in the real world. Individuals that has been extracted from online websites are:
 <figure>
-    <img src="/images/semantic2.png"/> 
+    <img src="/My_Portfolio/images/semantic2.png"/> 
 </figure>
 .
 So in total our knowledge base has 1 car of Audi Company,
@@ -219,19 +219,19 @@ So in total our knowledge base has 1 car of Audi Company,
 The SRSCP represents the concepts, relations, attributes, and instances for performing Semantic Reasoning. The SRSCP, supported by OWL axioms and SWRL rules, becomes the foundation for automated SR provided the knowledge base. The visualization of SRSCP is shown in Fig. 2. There are Twelve main classes in the SRSCP model.</p>
 <p>The information was collected with respect to the following properties of the cars.</p>
 <p><figure>
-    <img src="/images/semantic3.png"/> 
+    <img src="/My_Portfolio/images/semantic3.png"/> 
 </figure>
 .</p>
 <p>The Data Property for each car added were:</p>
 <p><figure>
-    <img src="/images/semantic4.png"/> 
+    <img src="/My_Portfolio/images/semantic4.png"/> 
 </figure>
 .</p>
 <p>IV. IMPLEMENTATION</p>
 <p>To construct the T-Boxes, I have used the help of SWRL rules, that will help classify cars on the basis of their environment-friendliness, Fuel-Efficiency, and Affordability.
 Moreover, Effective use of Transitive, asymmetric, irreflexive and symmetric rules have been put in practice for better reasoning capabilities.</p>
 <p><figure>
-    <img src="/images/semantic5.png"/> 
+    <img src="/My_Portfolio/images/semantic5.png"/> 
 </figure>
 .</p>
 <p>A. Eco Friendly Car:</p>
@@ -239,14 +239,14 @@ Moreover, Effective use of Transitive, asymmetric, irreflexive and symmetric rul
 follows:</p>
 <p>Cars(?p) ^ CO2Emissions(?p, ?x) ^ swrlb:lessThan(?x, 150) -&gt; EcoFriendlyCar(?p)</p>
 <p><figure>
-    <img src="/images/semantic6.png"/> 
+    <img src="/My_Portfolio/images/semantic6.png"/> 
 </figure>
 .</p>
 <p>B. Fuel Efficiency:</p>
 <p>To define a fuel-efficient car, the SWRL rule is as follows:
 Cars(?q) ^ Mileage(?q, ?x) ^ swrlb:greaterThan(?x, 40) -&gt; FuelEfficientCar(?q)</p>
 <p><figure>
-    <img src="/images/fuel1.png"/> 
+    <img src="/My_Portfolio/images/fuel1.png"/> 
 </figure>
 .</p>
 <p>C. Affordable Car:</p>
@@ -254,7 +254,7 @@ Cars(?q) ^ Mileage(?q, ?x) ^ swrlb:greaterThan(?x, 40) -&gt; FuelEfficientCar(?q
 Cars(?p) ^ price(?p, ?x) ^ swrlb:lessThan(?x, 10000) -&gt; Affordable(?p)
 Which means that cars whose price is less than 10000 British Pounds are categorized as affordable.</p>
 <p><figure>
-    <img src="/images/affordable.png"/> 
+    <img src="/My_Portfolio/images/affordable.png"/> 
 </figure>
 .</p>
 <p>D. Powerful Than - Transitive Property:</p>
@@ -266,12 +266,12 @@ To explain the transitive property, I have taken three cars from our knowledge b
 • Mercedes C Class
 In figure below we defined that Mercedes AMG A 45 is Powerful than Mercedes AMG A 43.</p>
 <p><figure>
-    <img src="/images/transitive.png"/> 
+    <img src="/My_Portfolio/images/transitive.png"/> 
 </figure>
 .</p>
 <p>In figure 8 we define, Mercedes C Class to be more powerful than Mercedes AMG A 45 version, hence the reasoner will reason that Mercedes C Class should be more powerful than Mercedes AMG A 43 too because of the transitive rule.</p>
 <p><figure>
-    <img src="/images/trans2.png"/> 
+    <img src="/My_Portfolio/images/trans2.png"/> 
 </figure>
 .</p>
 <p>E. Has Hybrid Version:</p>
@@ -280,7 +280,7 @@ In figure below we defined that Mercedes AMG A 45 is Powerful than Mercedes AMG 
 <p>Which means that if a car X is produced by a company Y and the Car X is powered by some fuel and has a model name, If the Company Y makes another Car with the name Z, and if that car has the same fuel along with a Second Fuel which has name “Battery” and the model-variant number of both cars is the same. This means that the second car is the Hybrid version of first car.
 Note: If the assertion doesnot appear while running the reasoner, please stop the reasoner and restart it again.</p>
 <p><figure>
-    <img src="/images/hybrid.png"/> 
+    <img src="/My_Portfolio/images/hybrid.png"/> 
 </figure>
 .</p>
 <p>F. Has Rival Car - Symmetric Property:</p>
@@ -288,7 +288,7 @@ Note: If the assertion doesnot appear while running the reasoner, please stop th
 hasEngine(?x, ?y) ^ EngineOf(?y, ?z) ^ differentFrom(?x, ?z) -&gt; hasRival(?x, ?z)
 Which states that if a car has engine Y and another car in the knowledge base has the same engine Y then both cars are Rivals or “ close competitors “ of each other.</p>
 <p><figure>
-    <img src="/images/rival.png"/> 
+    <img src="/My_Portfolio/images/rival.png"/> 
 </figure>
 .</p>
 <p>G. Has Ancestor Car - Asymmetric Property:</p>
@@ -296,7 +296,7 @@ Which states that if a car has engine Y and another car in the knowledge base ha
 ManufacturingYear(?p, ?x) ^ ManufacturedBy(?p, ?y) ^ ManufacturerOf(?y, ?z) ^ ManufacturingYear(?z, ?w) ^ swrlb:greaterThan(?w, ?x) ^ differentFrom(?p, ?z) -&gt; hasAncestorCar(?z, ?p)</p>
 <p>Which means that if a car P has a manufacturing year X, and there is another car Z which has a manufacturing year W, the car P and Z are made by the same company Y. The manufacturing Year of Car Z is greater than car P then car P is an ancestor car of car Z.</p>
 <p><figure>
-    <img src="/images/ancestor.png"/> 
+    <img src="/My_Portfolio/images/ancestor.png"/> 
 </figure>
 .</p>
 <p>H. Expensive Than - irreflexive:</p>
@@ -304,7 +304,7 @@ ManufacturingYear(?p, ?x) ^ ManufacturedBy(?p, ?y) ^ ManufacturerOf(?y, ?z) ^ Ma
 <p>price(?p, ?x) ^ price(?q, ?y) ^ swrlb:greaterThan(?x, ?y) ^ differentFrom(?p, ?q) -&gt; ExpensiveThan(?p, ?q)</p>
 <p>Which means that if a car P has some price and if another car Q has a greater price than P then Q is expensive than P.</p>
 <p><figure>
-    <img src="/images/expensivethan.png"/> 
+    <img src="/My_Portfolio/images/expensivethan.png"/> 
 </figure>
 .</p>
 <p>V. PROSPECTS OF THE PROJECT:</p>

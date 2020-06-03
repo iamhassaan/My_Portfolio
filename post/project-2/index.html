@@ -203,7 +203,7 @@
 <p>1)The first part of Ethereum Historical Data Analysis was to look over the past 4 years of transactions.
 Here I am using Map Reduce jobs to count the  number of transactions taking place in each month of the years 2015 - 2019.</p>
 <p><figure>
-    <img src="/images/time2.png"/> <figcaption>
+    <img src="/My_Portfolio/images/time2.png"/> <figcaption>
             <h4>Total transactions happening with time</h4>
         </figcaption>
 </figure>
@@ -217,7 +217,7 @@ Ethereum transactions begin to stabilize again as the trend goes upward back aga
 <p>2)Top Ten Most Popular Services:</p>
 <p>Here I have evaluated the top 10 smart contracts by total Ether received. Here I am focusing on aggregating all the transactions which took place by each address, to see the net transaction sum of each individual address. Using a repartition join between transactions and contracts table, I have made sure that the transactions are Smart Contracts. Later I have aggregated the values of those smart contracts to reveal the top 10 smart contracts.</p>
 <p><figure>
-    <img src="/images/top10.png"/> <figcaption>
+    <img src="/My_Portfolio/images/top10.png"/> <figcaption>
             <h4>Most popular services</h4>
         </figcaption>
 </figure>
@@ -227,7 +227,7 @@ Ethereum transactions begin to stabilize again as the trend goes upward back aga
 </ol>
 <p>To find out if the gas prices have changed over time, I designed a map reduce job to get the gas prices over time. Using the contracts table. Then I plotted those values with time and analysed the trend.</p>
 <p><figure>
-    <img src="/images/gasprices.png"/> <figcaption>
+    <img src="/My_Portfolio/images/gasprices.png"/> <figcaption>
             <h4>Gas Consumption per time</h4>
         </figcaption>
 </figure>
@@ -247,7 +247,7 @@ I made a replication join of my top 10 values contracts from Part-B with the tra
 find their history of transactions.
 For each top-10 address, its time-stamp and gas has been yielded.</p>
 <p><figure>
-    <img src="/images/gasvstime.png"/> <figcaption>
+    <img src="/My_Portfolio/images/gasvstime.png"/> <figcaption>
             <h4>Gas consumption per transaction</h4>
         </figcaption>
 </figure>
@@ -260,7 +260,7 @@ of transactions from Part_B job 1 output to the Scams.json file. To see if those
 involved in any sort of scams. The next step would be aggregating the scammed contracts with
 respect to their types and values of scams.</p>
 <p><figure>
-    <img src="/images/scamtrends.png"/> <figcaption>
+    <img src="/My_Portfolio/images/scamtrends.png"/> <figcaption>
             <h4>Scams and their trends with time</h4>
         </figcaption>
 </figure>

@@ -35,7 +35,7 @@
 <meta itemprop="description" content="Clustering using Gaussian Mixture Models on a Biomedical dataset.">
 <meta itemprop="datePublished" content="2019-09-09T10:58:08-04:00" />
 <meta itemprop="dateModified" content="2019-09-09T10:58:08-04:00" />
-<meta itemprop="wordCount" content="342">
+<meta itemprop="wordCount" content="333">
 
 
 
@@ -193,40 +193,40 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>In this project, we will use the Peterson and Barney’s dataset of vowel formant frequencies to perform classification. (For more info, look at http://speech:ucsd:edu/aldebaro/papers/klautau02_pbvowel.pdf. – a copy of this article is at QMplus)
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>In this project, we will use the Peterson and Barney’s dataset of vowel formant frequencies to perform classification. (For more info, look at http://speech:ucsd:edu/aldebaro/papers/klautau02_pbvowel.pdf.
 More specifically, Peterson and Barney measured the fundamental frequency F0 and the first three formant frequencies (F1-F3) of sustained English Vowels, using samples from various speakers.
 The dataset can be found in my Github as PB_data.npy, In the dataset we have 4 vectors (f0s-f3), containing the fundamental frequencies (F0, F1, F2 and F3) for each phoneme and another vector “phoneme_id” containing a number representing the id of the phoneme. The arrangement of the data is as follows:</p>
 <figure>
-    <img src="/images/spanish.jpg"/> 
+    <img src="/My_Portfolio/images/spanish.jpg"/> 
 </figure>
 
 <p>The definition of a Mixture of Gaussians is given below. Assuming our observed random vector is x, a MoG models p(x) as a sum of weighted Gaussians. More specifically:</p>
 <p><figure>
-    <img src="/images/mog.png"/> 
+    <img src="/My_Portfolio/images/mog.png"/> 
 </figure>
 .</p>
 <p>Where D is the dimension of vector x, μk, Σk and p(ck) are the mean vector, covariance matrix and the weight of the k-th gaussian, and K is the number of the gaussians used.</p>
 <p>The plot of F1 vs F2 is shown as:</p>
 <p><figure>
-    <img src="/images/f1vf2.png"/> 
+    <img src="/My_Portfolio/images/f1vf2.png"/> 
 </figure>
 .</p>
 <p>Now we will initialize three MOG:</p>
 <p>In the initialization of our Expectation and Maximization algorithm, we will initiate three Gaussians ( FOR K=3) with random mean, covariance and weights, by using get predictions function, we will be able to make the predictions (in terms of probabilities) of those points belonging to each gaussian. In the second iteration , by using the predictions assigned to each of the values, we will redraw the gaussians on the sample space, assign the probabilities to all the points of them belonging to new gaussians. We will reiterate over the same steps for 100 times.</p>
 <p>After clustering with three 3 clusters we get the following results on the third run:</p>
 <p><figure>
-    <img src="/images/cluster1.png"/> 
+    <img src="/My_Portfolio/images/cluster1.png"/> 
 </figure>
 .</p>
 <p>After using 6 clusters instead and taking values of mean and covariances:</p>
 <p><figure>
-    <img src="/images/cluster2.png"/> 
+    <img src="/My_Portfolio/images/cluster2.png"/> 
 </figure>
 .</p>
 <p>Now we use the 2 MoGs (K=3) learnt in Task 2 to build a classifier to discriminate between
 phonemes 1 and 2. Classifying using the Maximum Likelihood (ML).</p>
 <p><figure>
-    <img src="/images/class.png"/> 
+    <img src="/My_Portfolio/images/class.png"/> 
 </figure>
 .</p>
 <ul class="pa0">
