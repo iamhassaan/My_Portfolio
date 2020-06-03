@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scene on Muhammad Hassaan Anwar</title>
+    <link>https://iamhassaan.github.io/My_Portfolio/tags/scene/</link>
+    <description>Recent content in scene on Muhammad Hassaan Anwar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Feb 2020 10:58:08 -0400</lastBuildDate>
+    
+	<atom:link href="https://iamhassaan.github.io/My_Portfolio/tags/scene/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Walmart dataset analysis - An in-depth analysis on sales across several states using Machine Learning</title>
+      <link>https://iamhassaan.github.io/My_Portfolio/post/project-1/</link>
+      <pubDate>Sun, 09 Feb 2020 10:58:08 -0400</pubDate>
+      
+      <guid>https://iamhassaan.github.io/My_Portfolio/post/project-1/</guid>
+      <description>In this project, we cover some of the time series methods used in past competitions [7][8][9] to investigate the dataset provided by Walmart.
+First, we build a special kind of RNN model called LSTM which attempts to predict the unit sales of individual stores. This is done by considering a univariate model and then using a more complex multivariate model, which we hope increases the test accuracy. Next, from the scikit-learn library in Python, we build an RF model which analyzes the item HOUSEHOLD_1_272_CA_3_validation, whilst selecting the most important features which help predict the sales of this particular product.</description>
+    </item>
+    
+    <item>
+      <title>Flask Restful API for a Spanish Store</title>
+      <link>https://iamhassaan.github.io/My_Portfolio/post/project-3/</link>
+      <pubDate>Thu, 09 Jan 2020 10:58:08 -0400</pubDate>
+      
+      <guid>https://iamhassaan.github.io/My_Portfolio/post/project-3/</guid>
+      <description>The Idea behind this app is to create a &amp;ldquo;Spanish Retail Store&amp;rdquo; rest api. With the abiity to create, read, update and delete Stores, Users, and Items in a database.
+The API has been created with &amp;ldquo;Object Oriented Programming&amp;rdquo; Architecture, making sure all the resources and models (functions) remain seperate.
+The API has been Secured by JWT Authentication and https. The external API is provided by Yandex (Translation API), it will help in translating spanish words into english or vice versa.</description>
+    </item>
+    
+    <item>
+      <title>SRSCP- Semantic Reasoner for Smart Car Purchases</title>
+      <link>https://iamhassaan.github.io/My_Portfolio/post/project-4/</link>
+      <pubDate>Thu, 09 Jan 2020 10:58:08 -0400</pubDate>
+      
+      <guid>https://iamhassaan.github.io/My_Portfolio/post/project-4/</guid>
+      <description>I. INTRODUCTION
+There are various online platforms that provide services in car purchases and assists us in making choices regarding buying a new car. However, most of them are biased as they are getting sponsored by a specific car’s brand and therefore does not make a fair comparison between several models of cars. SRSCP is an initiative with an aim to provide a bias free semantic reasoner that is able to make fair comparison between cars stored in its knowledge base.</description>
+    </item>
+    
+    <item>
+      <title>GMM Clustering in Peterson and Barney Dataset&#34;</title>
+      <link>https://iamhassaan.github.io/My_Portfolio/post/project-5/</link>
+      <pubDate>Wed, 09 Oct 2019 10:58:08 -0400</pubDate>
+      
+      <guid>https://iamhassaan.github.io/My_Portfolio/post/project-5/</guid>
+      <description>In this project, we will use the Peterson and Barney’s dataset of vowel formant frequencies to perform classification. (For more info, look at http://speech:ucsd:edu/aldebaro/papers/klautau02_pbvowel.pdf. – a copy of this article is at QMplus) More specifically, Peterson and Barney measured the fundamental frequency F0 and the first three formant frequencies (F1-F3) of sustained English Vowels, using samples from various speakers. The dataset can be found in my Github as PB_data.npy, In the dataset we have 4 vectors (f0-f3), containing the fundamental frequencies (F0, F1, F2 and F3) for each phoneme and another vector “phoneme_id” containing a number representing the id of the phoneme.</description>
+    </item>
+    
+  </channel>
+</rss>
